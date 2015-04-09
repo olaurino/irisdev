@@ -94,3 +94,11 @@ python::pip { 'sherpa-samp':
     Vcsrepo["${home_dir}/sherpa-samp"]],
 
 }
+
+file {'bashrc':
+  path    => "${home_dir}/.bashrc",
+  ensure  => present,
+  content => "export IRIS_EXTRA_FLAGS=\"-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005\"
+alias iris=\"${home_dir}/iris/iris/target/Iris --test\"
+",
+}
