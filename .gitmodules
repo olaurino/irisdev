@@ -10,3 +10,6 @@
 [submodule "iris"]
 	path = iris
 	url = https://github.com/ChandraCXC/iris
+[submodule "puppet/modules/stdlib"]
+	path = puppet/modules/stdlib
+	url = https://github.com/puppetlabs/puppetlabs-stdlib
